@@ -53,7 +53,7 @@ export class SignUpPatientTwo extends Component {
                                     <input type="radio" checked="checked" name="radio" />
                                     <span className="checkmark"></span>
                                 </label>
-                                <p>or</p>
+                                <p className="d-inline mr-1">or</p>
                                 <label className="cont">
                                     <input type="radio" name="radio" />
                                     <span className="checkmark"></span>
@@ -68,7 +68,7 @@ export class SignUpPatientTwo extends Component {
 
                                 <input type="password" placeholder="Enter Password" className="form-control mt-2" />
                                 <input type="password" placeholder="Confirm Password" className="form-control mt-2" />
-                                <button className="next-btn">
+                                <button className="next-btn mt-2">
                                     Log In
                                 </button>
                             </form>

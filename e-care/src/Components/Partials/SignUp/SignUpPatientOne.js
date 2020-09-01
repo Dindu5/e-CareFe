@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import Img1 from '../../../Images/facebook.png'
-import Img3 from '../../../Images/google.png'
 
+import Img6 from '../../../Images/f.png'
+import Img7 from '../../../Images/g.png'
 export class SignUpPatientOne extends Component {
 
     render() {
@@ -17,14 +17,14 @@ export class SignUpPatientOne extends Component {
                                 Register
                             </div>
                             <form className="sign-in">
-                                <div className="position-relative">
-                                    <input type="text" placeholder="SignUp with Facebook" className="form-control" />
-                                    <img src={Img1} className="background position-absolute" alt="deco-background" />
-                                </div>
-                                <div className="position-relative">
-                                    <input type="text" placeholder="SignUp with Google" className="form-control mt-2" />
-                                    <img src={Img3} className="background position-absolute" alt="deco-background" />
-                                </div>
+                                <button className="btn w-100 text-white top-btn">
+                                    SignUp With Facebook
+                                    <img src={Img6} className="pull-right background" alt="deco-background" />
+                                </button>
+                                <button className="btn w-100 text-white top-btn mt-2">
+                                    SignUp With Google
+                                    <img src={Img7} className="pull-right background" alt="deco-background" />
+                                </button>
                             </form>
                             <h6 className="division">or</h6>
                             <form>
@@ -53,10 +53,10 @@ export class SignUpPatientOne extends Component {
                             <form className="register">
                                 <div classNamed="d-flex">
                                     <label className="cont">
-                                        <input type="radio" checked="checked" name="radio" />
+                                        <input type="radio" name="radio" />
                                         <span className="checkmark check1"></span>
                                     </label>
-                                    <p className="inbetween">or</p>
+                                    <p className="inbetween d-inline mr-2">or</p>
                                     <label className="cont">
                                         <input type="radio" name="radio" />
                                         <span className="checkmark check2"></span>
@@ -73,7 +73,7 @@ export class SignUpPatientOne extends Component {
 
                                 <input type="password" placeholder="Enter Password" className="form-control mt-2" />
                                 <input type="password" placeholder="Confirm Password" className="form-control mt-2" />
-                                <button className="next-btn">
+                                <button className="next-btn mt-2">
                                     Log In
                                 </button>
                             </form>

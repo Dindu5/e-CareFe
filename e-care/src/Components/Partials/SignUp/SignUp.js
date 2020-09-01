@@ -3,12 +3,10 @@ import React, { Component } from 'react'
 import 'react-web-tabs/dist/react-web-tabs.css';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 
-import Img1 from '../../../Images/facebook.png'
-import Img3 from '../../../Images/google.png'
 import Img4 from '../../../Images/circle1.png'
 import Img5 from '../../../Images/circle2.png'
-
-
+import Img6 from '../../../Images/f.png'
+import Img7 from '../../../Images/g.png'
 export class SignUp extends Component {
 
     render() {
@@ -25,21 +23,20 @@ export class SignUp extends Component {
                         </TabList>
                         <TabPanel tabId="one">
                             <form className="sign-in">
-                                <div className="position-relative">
-                                    <input type="text" placeholder="Login with Facebook" className="form-control" />
-                                    <img src={Img1} className="background position-absolute" alt="deco-background" />
-                                </div>
-
-                                <div className="position-relative">
-                                    <input type="text" placeholder="Login with Google" className="form-control mt-2" />
-                                    <img src={Img3} className="background position-absolute" alt="deco-background" />
-                                </div>
+                                <button className="btn w-100 text-white top-btn">
+                                    Login With Facebook
+                                    <img src={Img6} className="pull-right background" alt="deco-background" />
+                                </button>
+                                <button className="btn w-100 text-white top-btn mt-2">
+                                    Login With Google
+                                    <img src={Img7} className="pull-right background" alt="deco-background" />
+                                </button>
                             </form>
                             <h6 className="division">or</h6>
                             <form>
                                 <input type="text" placeholder="Enter Card No. or Email" className="form-control" />
                                 <input type="password" placeholder="Enter Password" className="form-control mt-2" />
-                                <button className="next-btn">
+                                <button className="next-btn mt-2">
                                     Sign In
                                 </button>
                             </form>

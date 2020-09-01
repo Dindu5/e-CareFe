@@ -14,7 +14,7 @@
 }
 .logo {
     position: absolute;
-    top: 15px;
+    top: -15px;
     left: 15px;
     height: 6rem;
 }
@@ -39,6 +39,7 @@
     height: 1rem;
     top: 0.5rem;
     right: 1.5rem;
+    float: right;
 }
 h4 {
     color: #007D85;
@@ -88,11 +89,15 @@ form {
     background-color: #e9e5e5;
 }
 
-.form-control {
+.form-control, .top-btn {
     border-radius: 20px !important;
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
     font-size: 0.8rem !important;
+}
+.top-btn {
+    text-align: left !important;
+    background: #1089FF !important;
 }
 h6 {
     margin: 0.5rem 0 !important;
@@ -102,7 +107,7 @@ h6 {
     content: '';
     width: 35%;
     height: 1px;
-    background-color: #333;
+    background-color: rgb(78, 75, 75);
     display: inline-block;
     margin-bottom: 3px;
     
@@ -230,6 +235,19 @@ label{
     h4 {
         margin: 0 auto;
     }
+    .close {
+        right: 1rem;
+        top: 1rem;
+        position: absolute;
+        background-color: white !important;
+        border-radius:50%;
+        text-shadow: none !important;
+        z-index: 2000;
+        font-size: 2rem;
+        padding: 0.9rem 0.7rem !important;
+        line-height: 0.5 !important;
+    }
+    
     
     
 }
